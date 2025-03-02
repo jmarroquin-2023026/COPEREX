@@ -206,6 +206,6 @@ export const update=async(req,res)=>{
         )
     }catch(e){
         console.error(e)
-        return res.status(500).send({message:'Internal server error'})
+        return res.status(500).send({message:'Internal server error',e})
     }
 }
